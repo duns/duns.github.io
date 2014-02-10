@@ -1,0 +1,46 @@
+<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">Mark D&ouml;nszelmann</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li{% if page.slug == "projects" %} class="active"{% endif %}>
+          <a href="index.html">Projects</a>
+        </li>
+<!--
+        <li{% if page.slug == "technologies" %} class="active"{% endif %}>
+          <a href="technologies.html">Technologies</a>
+        </li>
+        <li{% if page.slug == "employers" %} class="active"{% endif %}>
+          <a href="employers.html">Employers</a>
+        </li>
+        <li{% if page.slug == "references" %} class="active"{% endif %}>
+          <a href="references.html">References</a>
+        </li>
+-->
+        <li class="dropdown">
+           <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Contact<b class="caret"></b></a>
+           <ul class="dropdown-menu">
+              <li><a href="mailto:Mark.Donszelmann@gmail.com">E-mail</a></li>
+              <li><a href="https://github.com/duns" target="_blank">GitHub</a></li>
+              <li><a href="http://ch.linkedin.com/in/markdonszelmann" target="_blank">Linked in</a></li>
+              <li><a href="https://plus.google.com/105142920281054251811" target="_blank">Google+</a></li>
+              <li><a href="https://www.facebook.com/mark.donszelmann" target="_blank">Facebook</a></li>
+              <li><a href="https://twitter.com/MarkDonszelmann" target="_blank">Twitter</a></li>
+           </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="cv/Resume.pdf" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Links', 'Resume']);">Resume/CV (pdf)</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,67 +1,163 @@
-<title>Mark Donszelmann's Home Page</title>
-<h1>Mark Donszelmann</h1>
+---
+layout: home
+title: Mark D&ouml;nszelmann's Home Page
+slug: projects
+---
+<div class="jumbotron">
+    <div class="container">
+       <h1>Projects</h1>
+    </div>
+</div>
 
-<h2>Resume</h2>
+<div class="container">
+   <div class="row">
+      <div class="col-md-4">
+         <h2>ATWSS</h2>
+<p>To supervise underground activity in the <a href="http://cern.ch/atlas">ATLAS</a> 
+experiment at <a href="http://www.cern.ch">CERN</a>, mostly in radioactive areas, the ATLAS
+Wireless Safety System was designed to visualize and record a user's activity. The user has a camera on the helmet 
+and several measurement devices (radiation, heartrate, temperature, O<sub>2</sub>, CO<sub>2</sub>),
+which are read out continuously using a PTU box. I designed and wrote the Data Acquisition Server and the Web display 
+for this project. In the <a href="http://cern.ch/edusafe">EDUSAFE</a> project ATWSS is taken onboard and 
+extended with Augmented Reality to provide the user with an interactive view of the procedures he needs
+to execute during his underground activity.
+</p>
+         <p>
+            <a class="btn btn-default" role="button" href="https://atwss.web.cern.ch/ATWSS/index.php" target="_blank">View details »</a>
+         </p>
+      </div>
 
-<P>My <A HREF="cv/Resume.pdf">Resume</A> in PDF format.
-</P>
+      <div class="col-md-4">
+         <h2>ATLAS OTP</h2>
+<p>To account for all the non-physics work in the ATLAS experiment, accounting is done using the Operation Task Planner (OTP). 
+This tool, written in Java, translated into a WebApp using Google Web Toolkit (gwt), fills a Database
+with work done by ATLAS users. The same tool is also used to subscribe to shifts and on-call duties. 
+The Database is subsequently used by SAP to generate a number of reports for both the users, management and 
+the ATLAS funding agencies. I maintain the OTP WebApp, write all the reports and generate the necessary information.
+         <p>
+            <a class="btn btn-default" role="button" href="https://twiki.cern.ch/twiki/bin/viewauth/Atlas/OTP" target="_blank">View details »</a>
+         </p>
+      </div>
 
-<h2>WebApp Projects</h2>
+      <div class="col-md-4">
+         <h2>WIRED</h2>
+<p>The World-Wide Web Interactive Remote Event Display was originally created as a Java Applet in 1995 for the DELPHI experiment
+at CERN. It later evolved to a stand-alone application framework for Event Display for numerous other experiments at CERN. 
+At SLAC I extended WIRED to become a plugin into the Java Analysis Studio (JAS) framework, where it has the Linear Collider
+as its main experiment. WIRED continues to be maintained and extended by the team at SLAC.</a>
+</p>
+         <p>
+            <a class="btn btn-default" role="button" href="http://wired.freehep.org" target="_blank">View details »</a>
+         </p>
+      </div>
 
+   </div>
+
+   <div class="row">
+      <div class="col-md-4">
+         <h2>Maven NAR Plugin</h2>
+<p>Originally I wrote a Native (language) plugin for Maven 1, to compile JNI C and C++ libraries
+for FreeHEP. Later I extended this NAR (Native ARchive) plugin for Maven 2 to also handle
+standalone C and C++ code compilation. The code was donated to 
+Sonatype and later on put into github where it is currently maintained by others. Both the   
+<a href="http://duns.github.io/maven-nar-plugin/">original site</a> and the  
+<a href="https://github.com/maven-nar/nar-maven-plugin">new site</a> are on github. 
+As part of the project I used NAR to create a 
+<a href="http://duns.github.com/maven-swig-plugin/">Maven Swig Plugin</a> to run <a href="http://www.swig.org">SWIG</a>
+and created a
+<a href="http://github.com/duns/cpptasks-parallel">parallel and updated version</a> of <a href="http://ant-contrib.sourceforge.net/cpptasks/">CPPTasks</a>.
+</p>
+         <p>
+            <a class="btn btn-default" role="button" href="http://duns.github.io/maven-nar-plugin/" target="_blank">View details »</a>
+         </p>
+      </div>
+
+      <div class="col-md-4">
+         <h2>Vector Graphics</h2>
+<p>In the WIRED project we needed a general library to provide Java VectorGraphics output
+in a number of formats. Carl Loomis wrote the original VectorGraphics to provide output in 
+Encapsulated PostScript. I extended and generalized the library to handle fonts and provide 
+output to other vector formats, such as PDF, SWF (Flash), SVG and EMF. The latest code is maintained and
+available on <a href="https://github.com/freehep/freehep-vectorgraphics">github</a>.
+</p>
+         <p>
+            <a class="btn btn-default" role="button" href="http://java.freehep.org/vectorgraphics" target="_blank">View details »</a>
+         </p>
+      </div>
+
+      <div class="col-md-4">
+         <h2>FreeHEP</h2>
+<p>At SLAC, with Tony Johnson, and later on at CERN I worked on a number of OpenSource libraries within the 
+<a href="http://java.freehep.org">FreeHEP</a> framework. A non-exhaustive list is given below:
 <ul>
-  <li><a href="https://atwss.web.cern.ch/ATWSS/index.php">ATWSS (CERN-ATLAS)</a></li>
-  <li><a href="https://pptevm.cern.ch/mao/client/cern.ppt.mao.app.gwt.MaoClient/MaoClient.html#home">OTP (CERN-ATLAS, protected)</a></li>
-  <li><a href="https://github.com/duns/gwt-sipml5">SipML5 Demo using GWT-SIPML5 from Java</a></li>
-</ul>
-
-<h2>Maven Projects</h2>
-
-<ul>
-<li><a href="http://duns.github.com/maven-nar-plugin/">Maven Native Archive Plugin</a></li>
-<li><a href="http://duns.github.com/maven-swig-plugin/">Maven Swig Plugin</a></li>
-<li><a href="http://github.com/duns/cpptasks-parallel">Parallel version of CPPTasks</a></li>
-</ul>
-
-<h2>FreeHEP Projects</h2>
-
-<ul>
-<li><a href="http://freehep.github.com/freehep-psviewer">PostScript Viewer in Java</a></li>
-<li><a href="http://java.freehep.org/vectorgraphics">VectorGraphics for Java</a></li>
 <li><a href="http://freehep.github.com/freehep-typed-properties">Typed Properties Library for Java</a></li>
 <li><a href="http://freehep.github.com/freehep-io/">IO Extension Library for Java</a></li>
 <li><a href="http://java.freehep.org/freehep-argv/">Command Line Argument Parser for Java</a></li>
-<li><a href="http://java.freehep.org">Rest of FreeHEP</a></li>
 </ul>
+</p>
+         <p>
+            <a class="btn btn-default" role="button" href="http://java.freehep.org" target="_blank">View details »</a>
+         </p>
+      </div>
+   </div>
 
-<h2>GitHub Projects</h2>
+   <div class="row">
+      <div class="col-md-6">
+         <h2>SipML5</h2>
+<p>SIP is a protocol for audio and video over the internet. SipML5 is the WebRTC implementation of SIP in a browser. 
+For usage in the ATWSS project I 
+translated the JavaScript version of the <a href="http://sipml5.org">SipML5</a> Demo into Java 
+and further extended the gwt-sipml5 library. 
+The demo uses the
+<a href="https://github.com/duns/gwt-sipml5">gwt-sipml5</a> library.
+The gwt-sipml5 package allows you to use SipML5 from Java. A Live demo page is available on 
+<a href="http://gwt-sipml5.appspot.com/">app-engine</a> (needs WebRTC, chrome will do).
+</p>
+         <p>
+            <a class="btn btn-default" role="button" href="https://github.com/duns/gwt-sipml5" target="_blank">View details »</a>
+         </p>
+      </div>
 
+      <div class="col-md-6">
+         <h2>PostScript Viewer</h2>
+<p>To test out the Vector Graphics library for Java I wrote a PostScript viewer in Java.
+It is not complete, but implements most PostScript commands. A debugger was added as an educational feature so that one
+can actually follow how a stack-processor works.
+</p>
+         <p>
+            <a class="btn btn-default" role="button" href="http://freehep.github.com/freehep-psviewer" target="_blank">View details »</a>
+         </p>
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="col-md-6">
+         <h2>Web Sites</h2>
+<p>
+Several websites I wrote/designed with and without the use of Bootstrap:
 <ul>
-<li><a href="http://github.com/duns">Duns</a></li>
-<li><a href="http://github.com/freehep">FreeHEP</a></li>
-<li><a href="http://github.com/CERN">CERN</a></li>
+<li><a href="https://atwss.web.cern.ch/ATWSS/index.php">ATWSS (CERN)</a></li>
+<li><a href="http://edusafe.web.cern.ch/edusafe/site.php">Edusafe (CERN)</a></li>
+<li><a href="https://atlasop.cern.ch/operation.php">ATLAS Online Site (CERN protected)</a></li>
+<li><a href="https://twiki.cern.ch/twiki/bin/viewauth/Atlas/OTP">ATLAS OTP Site (CERN protected)</a></li>
+<li><a href="https://atlas.web.cern.ch/Atlas/Upgrade/">ATLAS Upgrade Site (CERN protected)</a></li>
 </ul>
+</p>
+      </div>
 
-<h2>Web Projects</h2>
-
-<ul>
-  <li><a href="http://edusafe.web.cern.ch/edusafe/site.php">Edusafe (CERN)</a></li>
-</ul>
-
-<h2>Older Projects</h2>
-
-<ul>
-<li><a href="http://wired.freehep.org/">WIRED World-Wide Web Interactive Remote Event Display</a></li>
-<li><a href="http://building.web.cern.ch/map/building?bno=MAIN+AUDITORIUM:+500-1-001">Searchable Building Map at CERN</a>, made using a PostScript map, on the web since 1994 !</li>
-</ul>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-18923942-5', 'duns.github.io');
-  ga('send', 'pageview');
-
-</script>
+      <div class="col-md-6">
+         <h2>CERN Map</h2>
+<p>
+In 1991 CERN designed the World-Wide Web. In 1994 I used a hand-drawn PostScript Map of the
+CERN buildings, which have a totally historical numbering scheme, to provide an interface
+on the web to find your way around CERN. The interface used a Perl script and a PostScript
+interpreter (GhostScript) to produce Gif images of the map, locating the building searched for.
+Remember, google maps did not exist at that time, in fact google did not exist yet...
+</p>
+         <p>
+            <a class="btn btn-default" role="button" href="http://building.web.cern.ch/map/building?bno=MAIN+AUDITORIUM:+500-1-001" target="_blank">View details »</a>
+         </p>
+      </div>
+   </div>
+</div>
 
